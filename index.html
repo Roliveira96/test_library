@@ -4,9 +4,198 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <title>Teste inicial</title>
 </head>
-<body>
-    
+<body class="background-fundo">
+
+<header class="blur fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light  container">
+        <div class="container-fluid p">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+                    aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">Livros</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="http://localhost/Lets">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://localhost/login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="http://localhost/signUp.html">Cadastrar</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                    <button class="btn blur btn-outline-white text-white" type="submit">Pesquisar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<main>
+
+    <img src="assets/img/slide3.jpg" alt="imagem" class="img-fluid ">
+
+
+    <div class="container-fluid bg-white">
+        <div class="container p-5">
+            <h1 class="display-1 text-center p-3">Bibliotéca Lets ❤️</h1>
+            <div class="row mb-5">
+                <div class="col-sm ">
+                    <div class="card shadow-lg ">
+                        <div class="card-body ">
+                            <img src="assets/img/slide3.jpg" alt="imagem" class="img-fluid ">
+                            <figure class="text-center">
+                                <blockquote class="blockquote">
+                                    <p>A well-known quote, contained in a blockquote element.</p>
+                                </blockquote>
+                                <figcaption class="blockquote-footer">
+                                    Someone famous in <cite title="Source Title">Source Title</cite>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm ">
+                    <div class="card shadow-lg ">
+                        <div class="card-body ">
+                            <img src="assets/img/slide3.jpg" alt="imagem" class="img-fluid ">
+                            <figure class="text-center">
+                                <blockquote class="blockquote">
+                                    <p>A well-known quote, contained in a blockquote element.</p>
+                                </blockquote>
+                                <figcaption class="blockquote-footer">
+                                    Someone famous in <cite title="Source Title">Source Title</cite>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm ">
+                    <div class="card shadow-lg ">
+                        <div class="card-body ">
+                            <img src="assets/img/slide3.jpg" alt="imagem" class="img-fluid ">
+                            <figure class="text-center">
+                                <blockquote class="blockquote">
+                                    <p>A well-known quote, contained in a blockquote element.</p>
+                                </blockquote>
+                                <figcaption class="blockquote-footer">
+                                    Someone famous in <cite title="Source Title">Source Title</cite>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row m-5">
+            <div class="mx-auto">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm ">
+                <div class="card shadow-lg ">
+                    <div class="card-body ">
+                        <i class="position-absolute top-0 display-3 start-50 translate-middle bg-success btn  btn-primary rounded-pill fa fa-comments fa-5x"></i>
+
+                        <div class="container  ">
+                            <div class="row m-5">
+                                <div class="mx-auto text-center">
+                                    <h2 class="display-6 m-3">Está com duvidas? Fale com um de nossos bibliotecários! 📚</h2>
+
+                                    <button class="btn btn-success"
+                                            type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                            aria-controls="offcanvasRight">Inciar chat com Bibliotecário!
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row m-5">
+            <div class="mx-auto">
+            </div>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel">Chat a ser realizado com vue</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+           Display do chat.
+        </div>
+    </div>
+
+
+</main>
+
+
+<!-- Footer -->
+<footer class="blur text-center text-white ">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                    class="fa fa-facebook-f"></i></a>
+
+            <!-- Twitter -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fa fa-twitter"></i></a>
+
+            <!-- Google -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fa fa-google"></i></a>
+
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                    class="fa fa-instagram"></i></a>
+
+            <!-- Linkedin -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fa fa-linkedin"></i></a>
+
+            <!-- Github -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fa fa-github"></i></a>
+        </section>
+        <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright:
+        <a class="text-white" href="https://lets.com.vc/">lets.com.vc</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+
+<script type="text/javascript" src="assets/js/bootstrap.js">
+
+</script>
 </body>
 </html>
