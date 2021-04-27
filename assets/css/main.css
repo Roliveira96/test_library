@@ -1,12 +1,21 @@
-.blur{
+.blur {
     background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(130%);
-
+    backdrop-filter: blur(40px) saturate(100%) contrast(45%) brightness(130%);
 }
- html {
+
+.blur-purple {
+    background-color: rgba(87, 3, 177, 0.85);
+    backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(130%);
+}
+
+html {
     height: 100%;
 }
-.background-fundo{
+
+h1 {
+    text-shadow:4px 4px 12px rgba(27, 28, 27, 0.75) !important;
+}
+.background-fundo {
     background-image: url("../img/fundo.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -14,6 +23,16 @@
     background-attachment: fixed;
 
 }
+
+
+.input-group-prepend samp {
+
+    background-color: #FFC312;
+    color: black;
+    border: 0 !important;
+
+}
+
 /*footer {*/
 /*    position: fixed;*/
 /*    bottom:0;*/
