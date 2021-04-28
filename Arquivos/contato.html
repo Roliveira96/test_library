@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <title>Login</title>
+</head>
+
+<body class="background-fundo">
+
+<div class="container">
+    <div class="row m-5">
+        <div class="mx-auto">
+        </div>
+    </div>
+</div>
+
+
+<header class="blur fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light  container">
+        <div class="container-fluid p">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+                    aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">Livros</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="http://localhost/Lets">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://localhost/login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="http://localhost/signUp.html">Cadastrar</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                    <button class="btn blur btn-outline-white text-white" type="submit">Pesquisar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<main>
+
+    <div class="container">
+        <div class="row justify-content-md-center h-100 align-items-center">
+            <div class=" blur card shadow-lg col-lg-6 ">
+                <div class="card-body ">
+                    <h1 class="display-1 text-center text-white p-3">
+                        dfdsfs
+                    </h1>
+
+
+                    <form id="app" class="row g-3">
+
+                        <div class="col-md-6">
+                            <label for="name" class="form-label">Nome</label>
+                            <input type="text" v-bind:class="[errorClass]" v-on:blur="name" v-model="nameIput"
+                                   class="form-control" id="name" name="name" value="" required>
+
+
+                            <div v-if="feedName" class="valid-feedback "> Bonito nome!</div>
+                            <div v-else class="invalid-feedback "> Ops, é somente valido nomeExistem erros em seu nome, somente é valido letras
+                                acima de dois caractéres
+                            </div>
+
+
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="lastName" class="form-label">Sobrenome</label>
+                            <input type="text" class="form-control " id="lastname" name="lastname" value="" required>
+                            <div id="lastnamefeed" class="valid-feedback invisible"> O sobrenome também!</div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="text" class="form-control " id="email" name="email" value="" required>
+                            <div class="valid-feedback invisible">
+                                E-mail ok!
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="fone" class="form-label">Telefone</label>
+                            <input type="text" class="form-control" id="fone" name="fone"
+                                   aria-describedby="" required>
+                            <div id="fonefeed" class="invalid-feedback">
+                                Telefone ok!
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <label for="subject" class="form-label">Assunto</label>
+                            <input type="text" class="form-control" id="subject"
+                                   aria-describedby="" required>
+                            <div id="subjectfeed" class="invalid-feedback invisible">
+                                Até aqui tudo bem!
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <label for="text" class="form-label">Comments</label>
+                            <textarea id="text" class="form-control "
+                                      placeholder="Digite aqui a sua mensagem!"></textarea>
+                            <div id="textfeed" class="invalid-feedback invisible">
+                                Ok!
+                            </div>
+                        </div>
+
+
+                        <div class="col-12">
+                            <button class="btn btn-primary" type="submit">Submit form</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="card-footer blur">
+                    <div class="d-flex justify-content-center links text-white"> Seja um membro!</div>
+                    <div class="d-flex justify-content-center links"><a href="#" class="text-success"> Clique aqui e se
+                        cadastre!</a></div>
+                    <div class="d-flex justify-content-center ">
+                        <a href="#" class="text-warning">Esqueceu a sua senha?</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row m-5">
+            <div class="mx-auto">
+            </div>
+        </div>
+    </div>
+
+
+</main>
+
+
+<footer class="blur text-center text-white ">
+    <div class="container p-4 pb-0">
+        <section class="mb-4">
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                    class="fa fa-facebook-f"></i></a>
+
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fa fa-twitter"></i></a>
+
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fa fa-google"></i></a>
+
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                    class="fa fa-instagram"></i></a>
+
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fa fa-linkedin"></i></a>
+
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fa fa-github"></i></a>
+        </section>
+    </div>
+
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright:
+        <a class="text-white" href="https://lets.com.vc/">lets.com.vc</a>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<script>
+
+    let app = new Vue({
+        el: '#app',
+        data: {
+
+            nameIput: null,
+            color: null,
+            errorClass: null,
+            feedName: false,
+            count: false
+        },
+        methods: {
+            name() {
+                this.count = true;
+                console.log(this.stringValidate(this.nameIput)+" <> "+this.stringLength(this.nameIput))
+                if (this.stringValidate(this.nameIput) && this.stringLength(this.nameIput)) {
+                    this.errorClass = 'is-valid'
+                    this.feedName = true
+                } else {
+                    this.errorClass = 'is-invalid'
+                    this.feedName = false
+                }
+            },
+
+            stringValidate(stringValue) {
+                let regex = /^[a-z]+$/i;
+                return !(stringValue.match(regex) == null);
+            },
+            stringLength(stringValue) {
+                return stringValue.length >= 2
+
+            }
+        }
+    });
+
+</script>
+
+
+<script type="text/javascript" src="assets/js/bootstrap.js">
+
+
+</script>
+</body>
+</html>

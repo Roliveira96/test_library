@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <style>
+        .red {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <input type="text" v-bind:class="[errorClass]" v-on:blur="name" id="test" v-model="input1" value="teste">
+    <p v-bind:class="{input1}">{{ input1 }}</p>
+    <div v-bind:class="[errorClass]"><p v-bind:class="{input1}">{{ input1 }}</p></div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<script>
+
+    let app = new Vue({
+        el: '#app',
+        data: {
+            teste: null,
+            input1: null,
+            color: null,
+            errorClass: null
+        },
+        methods: {
+            name() {
+                this.color = "red";
+                window.alert("ola " + this.input1);
+
+
+                if (this.stringValidate(this.input1))
+                    this.errorClass = 'has-validation'
+                else
+                    this.errorClass = 'is-valid'
+
+            },
+
+            stringValidate(stringValue) {
+                let regex = /^[a-z]+$/i;
+                return (stringValue.match(regex) == null);
+            }
+        }
+    });
+
+</script>
+
+</body>
+</html>

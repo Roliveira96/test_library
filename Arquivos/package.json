@@ -1,0 +1,27 @@
+{
+  "name": "lets_biblioteca_beta",
+  "version": "1.0.0",
+  "description": "Projeto teste Lets",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Roliveira96/test_library.git"
+  },
+  "keywords": [],
+  "author": "Ricardo de Oliveira - Lets",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Roliveira96/test_library/issues"
+  },
+  "homepage": "https://github.com/Roliveira96/test_library#readme",
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta3",
+    "node-sass": "^5.0.0",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1",
+    "vue": "^2.6.12"
+  }
+}
